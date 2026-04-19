@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "payload dev",
-    "build": "payload build",
+    "dev": "ts-node server.ts",
+    "build": "tsc",
     "start": "node dist/server.js"
   },
   "dependencies": {
     "payload": "^3.0.0",
     "@payloadcms/db-mongodb": "^3.0.0",
     "@payloadcms/richtext-lexical": "^3.0.0",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0"
   },
   "engines": {
     "node": ">=18.0.0"
